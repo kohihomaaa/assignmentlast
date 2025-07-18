@@ -1,0 +1,33 @@
+HEADER 
+    sidebar
+    logo
+
+MAIN
+    FINDING Tour
+    CUSTOMER FEEDBACK
+    about us
+    why choose us?
+    our services
+    our staffs
+    Popular adventures
+    offers
+    
+    
+    
+FOOTER
+    OUR AIM
+    QUICK LINKS
+        TERMS AND CONDITION 
+        hotels
+        rentals
+        
+    CONTACTING US
+        EMAIL
+        PHONE
+        ADDRESS
+    WHAT PAYMENT METHODS ACCEPTABLE
+        Mastercard
+        PAYPAL
+        Visa
+        DISCOVER
+    copyright

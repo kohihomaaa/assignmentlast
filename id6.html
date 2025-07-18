@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | D. Travels & Tours</title>
+  <link rel="stylesheet" href="../../css/tour.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+  <header>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="sidebar" class="sidebar">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+      <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="../../images/logo.png" alt="Kohi Travels Logo"/>
+    </div>
+  </header>
+  <main>
+    <!-- Your page content goes here -->
+  </main>
+  <script src="../../js/main.js"></script>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Our Aim</h3>
+        <p>
+          At Kohi Travels & Tours, our aim is to provide memorable travel experiences, excellent service, and safe journeys to all our customers.
+        </p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="terms.html">Terms</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@kohitravels.com</p>
+        <p>Phone: +977-123456789</p>
+        <p>Address: Kathmandu, Nepal</p>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 1em; margin-bottom: 1em;">
+      <span style="font-size: 1.1em; color: #fff;">We Support:</span>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" style="height:28px; background:#fff; border-radius:4px; padding:2px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" style="height:28px; background:#fff; border-radius:4px; padding:2px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" style="height:28px; background:#fff; border-radius:4px; padding:2px;">
+      <img src="data:image/webp;base64,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" alt="Discover" style="height:28px; background:#fff; border-radius:4px; padding:2px;">
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kohi Travels & Tours. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

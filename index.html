@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | D. Travels & Tours</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+  <header>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="sidebar" class="sidebar">
+      <ul>
+        <li class="home-dropdown">
+          <a href="index.html">Home</a>
+          <ul class="home-sections">
+            <li><a href="#tour-list">Tours</a></li>
+            <li><a href="#feedback">Customer Feedback</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-choose-us">Why Choose Us?</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#staffs">Our Staffs</a></li>
+            <li><a href="#adventures">Popular Adventures</a></li>
+            <li><a href="#offers">Offers</a></li>
+          </ul>
+        </li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="../images/logo.png" alt="Kohi Travels Logo"/>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2><span class="highlight">Explore Nepal</span></h2>
+        <h1>Discover Your Next<br>Adventure With Us.</h1>
+        <p>
+          Nepal Travels & Expedition is a leading full-service trekking, tour, mountaineering, scenic, cultural and spiritual tours, wilderness expedition, and overland adventure agency, offering a variety of experiences for every type of traveler. Start by searching your dream trip.
+        </p>
+        <form class="hero-form" id="tour-form">
+          <div class="custom-dropdown" id="continent-dropdown">
+            <button type="button" class="dropdown-btn">Select Continent</button>
+            <div class="dropdown-content">
+              <a href="#" data-value="Asia">Asia</a>
+              <a href="#" data-value="Europe">Europe</a>
+              <a href="#" data-value="Africa">Africa</a>
+            </div>
+          </div>
+
+          <div class="custom-dropdown" id="destination-dropdown" style="display:none;">
+            <button type="button" class="dropdown-btn">Select Destination</button>
+            <div class="dropdown-content"></div>
+          </div>
+
+          <div class="custom-dropdown" id="activity-dropdown" style="display:none;">
+            <button type="button" class="dropdown-btn">Select Activity</button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+
+          <button type="submit" style="display:none;" id="find-tours-btn">
+            <span style="margin-right:0.5em;">&#128269;</span>Find Tours
+          </button>
+        </form>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-bg">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Trekking in Nepal">
+        </div>
+      </div>
+    </section>
+
+    <button id="reset-btn" class="button">Reset Filters</button>
+
+    <section id="tour-list"></section>
+
+    <section id="about">
+  <h2>
+    <span>About Us</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="About Icon" style="height:1.2em;vertical-align:middle;margin-left:0.3em;">
+  </h2>
+  <div class="section-underline"></div>
+  <div style="float:right; margin-left:2em; margin-bottom:1em;">
+    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=300&q=80" alt="Team" style="border-radius:12px; box-shadow:0 2px 12px rgba(44,62,80,0.10); width:180px;">
+  </div>
+  <p>
+    <span class="highlight">Kohi Travels & Tours</span> is passionate about delivering more than just vacations — we offer immersive journeys that leave lasting memories.
+  </p>
+  <p>
+    <strong>Our Mission:</strong> To provide personalized, safe, and enriching travel experiences that go beyond expectations.
+  </p>
+  <ul>
+    <li>Experienced local guides and coordinators</li>
+    <li>Custom itineraries for every traveler</li>
+    <li>Commitment to authenticity and responsible tourism</li>
+    <li>Trusted by travelers worldwide</li>
+  </ul>
+  <p>
+    Let us be your gateway to discovering the natural beauty, rich cultures, and spiritual heritage of South Asia.
+  </p>
+  <div style="clear:both"></div>
+</section>
+
+    <!-- Customer Feedback -->
+<section id="feedback" class="testimonial-section">
+  <div class="testimonial-card-wrapper">
+    <div class="testimonial-card active">
+      <div class="testimonial-img-col">
+        <img class="testimonial-img" src="https://img.freepik.com/free-photo/full-length-portrait-traveling-woman-wearing-hat-trench-coat-holding-suitcase_171337-11444.jpg" alt="Customer Photo 1">
+      </div>
+      <div class="testimonial-content-col">
+        <div class="testimonial-user">
+          <span class="testimonial-user-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon" />
+          </span>
+          <span class="testimonial-user-name">K Khamcha</span>
+        </div>
+        <div class="testimonial-quote-icon">❝</div>
+        <blockquote>
+          <p>
+            <em>
+              This was our first time visiting Nepal, Bhutan, and Kashmir, and we thoroughly enjoyed the trip. We feel fortunate to have chosen your company for the arrangements—you provided excellent service and strong coordination, especially with the Bhutan operator. Aside from a few minor issues, the Indian arrangements were also satisfactory.
+
+We look forward to future trips and will gladly recommend your services.
+
+Wishing you all the best in your meaningful work supporting underprivileged children. May you be richly blessed in your efforts. </em>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-img-col">
+        <img class="testimonial-img" src="https://img.freepik.com/free-photo/young-woman-traveler-hat-holding-map_1150-11073.jpg" alt="Customer Photo 2">
+      </div>
+      <div class="testimonial-content-col">
+        <div class="testimonial-user">
+          <span class="testimonial-user-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon" />
+          </span>
+          <span class="testimonial-user-name">Priya R.</span>
+        </div>
+        <div class="testimonial-quote-icon">❝</div>
+        <blockquote>
+          <p>
+            <em>
+              Excellent service and unforgettable adventures. Highly recommended! The guides were knowledgeable and friendly, and the itinerary was perfect for our group. Thank you for making our Nepal trip so memorable!
+            </em>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-img-col">
+        <img class="testimonial-img" src="https://img.freepik.com/free-photo/happy-man-traveler-hiking-mountains_1150-11136.jpg" alt="Customer Photo 3">
+      </div>
+      <div class="testimonial-content-col">
+        <div class="testimonial-user">
+          <span class="testimonial-user-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon" />
+          </span>
+          <span class="testimonial-user-name">Suman T.</span>
+        </div>
+        <div class="testimonial-quote-icon">❝</div>
+        <blockquote>
+          <p>
+            <em>
+              The Everest Base Camp Trek was a life-changing experience! Everything was well organized and the team was always ready to help. I will definitely travel with you again.
+            </em>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-img-col">
+        <img class="testimonial-img" src="https://img.freepik.com/free-photo/portrait-smiling-tourist-woman-with-backpack_23-2148204983.jpg" alt="Customer Photo 4">
+      </div>
+      <div class="testimonial-content-col">
+        <div class="testimonial-user">
+          <span class="testimonial-user-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon" />
+          </span>
+          <span class="testimonial-user-name">Alexandra P.</span>
+        </div>
+        <div class="testimonial-quote-icon">❝</div>
+        <blockquote>
+          <p>
+            <em>
+              I loved the Chitwan Jungle Safari! The staff were so helpful and the experience was beyond my expectations. Will recommend to all my friends.
+            </em>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-nav">
+    <button class="testimonial-nav-btn" id="testimonial-prev" aria-label="Previous">&#60;</button>
+    <button class="testimonial-nav-btn" id="testimonial-next" aria-label="Next">&#62;</button>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section id="why-choose-us" class="why-choose-section">
+  <h2>
+    <span>Why Choose Us?</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Star Icon" style="height:1.2em;vertical-align:middle;margin-left:0.3em;">
+  </h2>
+  <div class="section-underline"></div>
+  <ul class="why-choose-list">
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/512/190/190406.png" alt="Guide" class="why-icon">
+      Experienced local guides
+    </li>
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Custom" class="why-icon">
+      Customizable itineraries
+    </li>
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" alt="Support" class="why-icon">
+      24/7 support
+    </li>
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/512/190/190422.png" alt="Price" class="why-icon">
+      Best price guarantee
+    </li>
+  </ul>
+</section>
+
+<!-- Our Services -->
+<section id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Trekking & Hiking</li>
+    <li>Cultural Tours</li>
+    <li>Mountaineering Expeditions</li>
+    <li>Hotel Bookings</li>
+    <li>Vehicle Rentals</li>
+  </ul>
+
+  <p style="margin-top: 20px;">
+    Kohi Company is more than just a travel agency — we are a proud conglomerate with deep roots in the tourism and hospitality industry. By choosing Kohi Travels & Tours, you gain exclusive access to a wide range of benefits across our sister companies. Enjoy discounted flights through Kohi Airlines, luxury sea voyages with Kohi Cruise, and preferential rates at our five-star Kohi Hotels. When you book your next adventure with us, you're not just buying a trip — you're stepping into a world of premium services at unbeatable value.
+  </p>
+</section>
+
+
+<!-- Our Staffs -->
+<section id="staffs">
+  <div class="staffs-flex">
+    <div class="staffs-text"></div>
+  <h2>Our Staffs</h2>
+  <p>Meet our team of experienced guides, porters, and travel experts dedicated to making your journey safe and memorable.</p>
+  </div>
+  <div class="staffs-img">
+  <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=300&q=80" alt="Team" style="border-radius:12px; box-shadow:0 2px 12px rgba(44,62,80,0.10); width:180px;">
+</div>
+</div>
+</section>
+
+<!-- Popular Adventures -->
+<section id="adventures">
+  <h2>Popular Adventures</h2>
+  <ul>
+    <li>Everest Base Camp Trek</li>
+    <li>Annapurna Circuit</li>
+    <li>Chitwan Jungle Safari</li>
+    <li>Pokhara City Tour</li>
+  </ul>
+</section>
+
+<!-- Offers -->
+<section id="offers">
+  <h2>Special Offers</h2>
+  <p>Book now and get up to 15% off on selected treks and tours!</p>
+</section>
+
+<!-- Travel Quotes -->
+<section id="travel-quotes" class="quotes-section">
+  <div class="quotes-card-wrapper">
+    <div class="quotes-card active">
+      <blockquote>
+        <p>
+          <em>
+            "The world is a book, and those who do not travel read only one page."
+          </em>
+        </p>
+        <footer>— Saint Augustine</footer>
+      </blockquote>
+    </div>
+    <div class="quotes-card">
+      <blockquote>
+        <p>
+          <em>
+            "Traveling – it leaves you speechless, then turns you into a storyteller."
+          </em>
+        </p>
+        <footer>— Ibn Battuta</footer>
+      </blockquote>
+    </div>
+    <div class="quotes-card">
+      <blockquote>
+        <p>
+          <em>
+            "Not all those who wander are lost."
+          </em>
+        </p>
+        <footer>— J.R.R. Tolkien</footer>
+      </blockquote>
+    </div>
+    <div class="quotes-card">
+      <blockquote>
+        <p>
+          <em>
+            "The journey of a thousand miles begins with a single step."
+          </em>
+        </p>
+        <footer>— Lao Tzu</footer>
+      </blockquote>
+    </div>
+    <div class="quotes-card">
+      <blockquote>
+        <p>
+          <em>
+            "To travel is to live."
+          </em>
+        </p>
+        <footer>— Hans Christian Andersen</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <script src="../js/main.js"></script>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Our Aim</h3>
+      <p>
+        To provide personalized, safe, and enriching travel experiences that go beyond expectations.
+      </p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="terms.html">Terms and Condition</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Rentals</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contacting Us</h3>
+      <ul>
+        <li>Email: <a href="mailto:info@kohitravels.com">info@kohitravels.com</a></li>
+        <li>Phone: +977-1-1234567</li>
+        <li>Address: Kathmandu, Nepal</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>What Payment Methods Acceptable</h3>
+      <ul>
+        <li>Mastercard</li>
+        <li>PayPal</li>
+        <li>Visa</li>
+        <li>Discover</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Kohi Travels & Tours. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>

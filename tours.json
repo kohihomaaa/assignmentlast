@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Everest Base Camp Trek",
+    "location": "Nepal",
+    "activity": "Trekking",
+    "price": 60000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg",
+    "description": "Experience the iconic Everest trail."
+  },
+    {
+    "id": 3,
+    "title": "Luxurious tour",
+    "location": "Nepal",
+    "activity": "Luxury Trips",
+    "price": 60000,
+    "image": "https://th.bing.com/th/id/R.318ffdfe5327200a5f91360fc00c3237?rik=vOBZ3M6Pkzy1Hg&riu=http%3a%2f%2fnepaltourism.org%2fwp-content%2fuploads%2f2018%2f08%2fGrand-Hotel-Nepal-Kathmandu-1.jpg&ehk=Iyl0DS3XwufM2SDFEzjgtv%2f1Yq5UsxKSaW9%2fVNcA%2b2A%3d&risl=&pid=ImgRaw&r=0",
+    "description": "Experience the iconic Everest trail."
+  },   
+  {
+    "id": 2,
+    "title": "Cultural Heritage Tour",
+    "location": "India",
+    "activity": "Cultural Tour",
+    "price": 30000,
+    "image": "images/india-cultural.jpg",
+    "description": "Explore India's rich cultural heritage."
+  }
+]
